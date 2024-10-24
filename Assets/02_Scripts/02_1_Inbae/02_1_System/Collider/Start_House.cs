@@ -1,20 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Start_House : MonoBehaviour
 {
-    public GameObject child;
+    public GameObject parent;
 
-    void Start()
+    void OnEnable()
     {
-        child = transform.GetChild(0).gameObject;
-    }
-    void OnTriggerEnter2D(Collider2D coll)
-    {
-        if (coll != child.GetComponent<Collider2D>())
+        GameObject[] otherObjects = GameObject.FindGameObjectsWithTag("House");
+
+        parent = transform.parent.gameObject;
+
+        for (int i = 0; i < otherObjects.Length; i++)
         {
-            Physics2D.IgnoreCollision(coll, gameObject.GetComponent<Collider2D>());
+            if (otherObjects[i].name == parent.name)
+            {
+                continue;
+            }
+            else
+            {
+                Physics2D.IgnoreCollision(otherObjects[i].GetComponent<Collider2D>(), GetComponent<Collider2D>());
+            }
         }
     }
 }
