@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 178648542}
   - component: {fileID: 178648544}
   m_Layer: 5
-  m_Name: Card
+  m_Name: Back2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,6 +213,7 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: 0}
   thisImage: {fileID: 0}
+  match: {fileID: 0}
   isFlipped: 0
 --- !u!1 &237349078
 GameObject:
@@ -513,7 +514,7 @@ GameObject:
   - component: {fileID: 642868052}
   - component: {fileID: 642868054}
   m_Layer: 5
-  m_Name: Card
+  m_Name: Back1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,6 +592,7 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: 0}
   thisImage: {fileID: 0}
+  match: {fileID: 0}
   isFlipped: 0
 --- !u!1 &703844363
 GameObject:
@@ -605,7 +607,7 @@ GameObject:
   - component: {fileID: 703844365}
   - component: {fileID: 703844367}
   m_Layer: 5
-  m_Name: Card
+  m_Name: Back2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -683,6 +685,7 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: 0}
   thisImage: {fileID: 0}
+  match: {fileID: 0}
   isFlipped: 0
 --- !u!1 &971064425
 GameObject:
@@ -697,7 +700,7 @@ GameObject:
   - component: {fileID: 971064427}
   - component: {fileID: 971064429}
   m_Layer: 5
-  m_Name: Card
+  m_Name: Back1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -775,6 +778,7 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: 0}
   thisImage: {fileID: 0}
+  match: {fileID: 0}
   isFlipped: 0
 --- !u!1 &1057664395
 GameObject:
@@ -893,7 +897,7 @@ GameObject:
   - component: {fileID: 1078880056}
   - component: {fileID: 1078880058}
   m_Layer: 5
-  m_Name: Card
+  m_Name: Back1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -971,6 +975,7 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: 0}
   thisImage: {fileID: 0}
+  match: {fileID: 0}
   isFlipped: 0
 --- !u!1 &1233959566
 GameObject:
@@ -985,7 +990,7 @@ GameObject:
   - component: {fileID: 1233959568}
   - component: {fileID: 1233959570}
   m_Layer: 5
-  m_Name: Card
+  m_Name: Back2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,6 +1068,7 @@ MonoBehaviour:
   front: {fileID: 0}
   back: {fileID: 0}
   thisImage: {fileID: 0}
+  match: {fileID: 0}
   isFlipped: 0
 --- !u!1 &1671940453
 GameObject:
@@ -1076,7 +1082,7 @@ GameObject:
   - component: {fileID: 1671940456}
   - component: {fileID: 1671940455}
   m_Layer: 5
-  m_Name: Back2
+  m_Name: Back2_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1151,7 +1157,7 @@ GameObject:
   - component: {fileID: 1673473206}
   - component: {fileID: 1673473205}
   m_Layer: 5
-  m_Name: Back1
+  m_Name: Back1_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1293,7 +1299,7 @@ GameObject:
   - component: {fileID: 2122412616}
   - component: {fileID: 2122412617}
   m_Layer: 5
-  m_Name: Matching
+  m_Name: MatchFind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

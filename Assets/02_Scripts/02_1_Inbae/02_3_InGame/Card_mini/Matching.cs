@@ -12,24 +12,35 @@ public class Matching : MonoBehaviour
     {
         if (imageSet[1] != null)
         {
-            if(imageSet[0].GetComponent<Image>().sprite.Equals(imageSet[1].GetComponent<Image>().sprite))
+            if(imageSet[0].name.Equals(imageSet[1].name))
             {
                 Debug.Log("°°À½!");
                 for (i = 0;i<2;i++)
                 {
-                    if (imageSet[0].name.Equals("Card"))
-                    {
-                        imageSet[0].GetComponent<CardFlip1>().FlipCard();
-                    }
                     if (imageSet[0].name.Equals("Back1"))
                     {
-                        imageSet[0].GetComponent<CardFlip1>().FlipCard();
+                        imageSet[0].GetComponent<CardFlip1>().destroythis();
+                        imageSet[1].GetComponent<CardFlip1>().destroythis();
                     }
                     if (imageSet[0].name.Equals("Back2"))
                     {
-                        imageSet[0].GetComponent<CardFlip2>().FlipCard();
+                        imageSet[0].GetComponent<CardFlip2>().destroythis();
+                        imageSet[1].GetComponent<CardFlip2>().destroythis();
                     }
                 }
+
+                imageSet = new GameObject[2];
+            }
+            else
+            {
+                if (imageSet[0].name.Equals("Back1"))
+                    imageSet[0].GetComponent<CardFlip1>().slowflip();
+                if (imageSet[0].name.Equals("Back2"))
+                    imageSet[0].GetComponent<CardFlip2>().slowflip();
+                if (imageSet[1].name.Equals("Back1"))
+                    imageSet[1].GetComponent<CardFlip1>().slowflip();
+                if (imageSet[1].name.Equals("Back2"))
+                    imageSet[1].GetComponent<CardFlip2>().slowflip();
 
                 imageSet = new GameObject[2];
             }
