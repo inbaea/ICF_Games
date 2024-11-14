@@ -2,19 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 public class StartText : MonoBehaviour
 {
-    public TMP_Text tmp;
-    public TextMeshProUGUI tmp2;
-    public GameObject maneger;
+    public LoopType looptype;
+    public TextMeshProUGUI text;
 
-    void Start()
+    private void Start()
     {
-        maneger = GameObject.Find("GameManager");
-        if (maneger.GetComponent<GameManager>().date == 0)
-
-
-        tmp.text = "원하는 텍스트 적어넣기";
-        tmp2.text = "원하는 텍스트 적어넣기2";
+        text.DOFade(0.0f, 1).SetLoops(-1, looptype);
     }
 }
