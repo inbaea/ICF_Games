@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Start_btn : MonoBehaviour
 {
+    GameObject manager;
+
+    void Start()
+    {
+        manager = GameObject.Find("GameManager");
+    }
     public void Click()
     {
-        SceneManager.LoadScene("Main");
+        manager.GetComponent<GameManager>().nextScene = "Main";
+        SceneManager.LoadScene("Loading");
     }
 }

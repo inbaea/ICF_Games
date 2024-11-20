@@ -13,7 +13,7 @@ public class Start_Active : MonoBehaviour
 
     public IEnumerator activePannel()
     {
-        yield return new WaitForSeconds(10.0f);
+        yield return new WaitForSeconds(5.0f);
 
         pannel.SetActive(true);
     }
