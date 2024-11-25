@@ -21,5 +21,10 @@ public class Go2Next : MonoBehaviour
         {
             SceneManager.LoadScene("Main");
         }
+
+        if (manager.GetComponent<GameManager>().nextScene == "Dictionary")
+        {
+            SceneManager.LoadScene("Dictionary");
+        }
     }
 }
