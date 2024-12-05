@@ -1,0 +1,5 @@
+Assets폴더의 
+basket: 탄환을 받아서 점수를 기록 
+bullet: 탄환의 발사를 관리
+GameManager: 점수를 기록하고 화면에 출력
+tank파일: 탄환을 발사 시키는 주체
